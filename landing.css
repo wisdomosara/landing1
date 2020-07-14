@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Permanent+Marker&display=swap');
 
 body{
-    margin:0
+    margin:0;
+    padding: 0
 }
 h1,h2,h3,h4,h5{
     font-family: "Montserrat";
 }
 p{
     font-family: "Montserrat";
-    font-size:  1.5vw;
+    font-size:  1.3vw;
 }
 h1{
     font-size: 2.5vw  !important
@@ -67,6 +68,55 @@ input{
     outline: none;
     color: white;
 }
+#mobile-hero{
+    display: none
+}
+@media only screen and (max-width:680px){
+    #mobile-hero{
+        display: block;
+        background-color: #1976D2;
+        color: white
+    }
+    .logo-mobile{
+        font-family: "permanent Marker";
+    }
+    .main{
+        display: none
+    }
+    .mobile-hero-img{
+        padding: 0 !important;
+        margin: 0 !important
+    }
+    #mobile-hero h1{
+        font-size: 32px !important;
+        font-weight: bolder !important
+    }
+    #mobile-hero p, #mobile-hero h4{
+        font-size: 21px !important;
+        font-weight: normal
+    }
+    #mobile-hero input{
+        width: 100%;
+    }
+    input{
+        padding:8px;
+        background-color: #11508E;
+        height: 70px;
+        border-style: none;
+        outline: none;
+    }
+    input::placeholder {
+        font-size: 21px;
+    }
+    .mobile-submit{
+        background-color: #19D275;
+        color: white;
+        padding: 16px 53px;
+        font-size: 21px;
+    }
+}
+
+
 @media only screen and (max-width:1000px) {
     @media only  screen and (min-width:700px) {
         .main-flex{
